@@ -28,3 +28,4 @@ The goal of this project is to make an updated version of my personal site with 
 * [Validation is tight](https://validator.w3.org/#validate_by_input)
 * [Color Pallete](https://coolors.co/323031-3d3b3c-7f7979-c1bdb3-5f5b6b)
 * [Not using this one, but I just thought it looked cool](https://coolors.co/8cada7-2e282a-cd5334-edb88b-fad8d6)
+* [Animal Crossing Type Pallete](https://coolors.co/87a878-b0bc98-c7ccb9-cae2bc-dbf9b8)
