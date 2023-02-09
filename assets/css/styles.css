@@ -1,0 +1,29 @@
+html{
+    margin: 0 px;
+    background-color: #b0Bc98;
+    font-family: 'Comfortaa', cursive;
+}
+
+html,body{
+    height:100%;
+}
+
+#bgMenu{
+    position:static;
+    right:0;
+}
+.navMenu{
+    
+}
+
+.contentPage{
+    position: relative;
+    height: 100%;
+}
+
+#mii_fr img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 65%;
+}
