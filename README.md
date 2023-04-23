@@ -31,3 +31,4 @@ The goal of this project is to make an updated version of my personal site with 
 * [New Design](https://www.figma.com/file/x0hLUkFfOwsAfM0oXq2lLZ/Portfolio-Site?node-id=0%3A1)
 * [Validation is tight](https://validator.w3.org/#validate_by_input)
 * [Animal Crossing Type Pallete](https://coolors.co/87a878-b0bc98-c7ccb9-cae2bc-dbf9b8)
+* [fullpage.js](https://alvarotrigo.com/fullPage/docs/)

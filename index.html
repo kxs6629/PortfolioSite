@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://kit.fontawesome.com/08c5a560dd.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
   </head>
   <body>
@@ -20,14 +21,17 @@
     </svg>
   </div> -->
 
-  <!-- <div class="navMenu">
-    <nav>
+  <div class="navMenu">
       <a href ="#welcomeScreen">Welcome</a>
-      <a href ="#experienceScreen">Experience</a>
-      <a href ="#projectScreen">Projects</a>
-      <a href ="#contactScreen">Contact</a>
-    </nav>
-  </div> -->
+      <div id="navLinks">
+        <a href ="#experienceScreen">Experience</a>
+        <a href ="#projectScreen">Projects</a>
+        <a href ="#contactScreen">Contact</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+      <i class="fa-sharp fa-regular fa-bars"></i>
+    </a>
+  </div>
 
   
  <div id="fullpage">
@@ -46,7 +50,7 @@
         <p>As I approach graduation, I can say that I have an extensive academic background, and have worked in a professional environment via semester long internships.</p>
         <div id = "resumeButton">
           <span id="reusmeIcon"><img src="./assets/media/icons/resume_icon.png" alt="Resume Icon"></span>
-          <p>View my resume here</p>
+          <a href="assets/media/docs/resume.pdf">View my resume here</a>
         </div>
       </div>
     </div>
@@ -61,12 +65,12 @@
     <div class="section">
       <div class = "contentPage" id="contactScreen">
         <h1>Contact</h1>
-        <p>If you've made it this far, thank you for reading! Feel free to reach out to me using the following platforms for further inquiries, or even just to say hi</p>
+        <p>If you've made it this far, thank you for reading! Feel free to reach out to me using the following platforms for further inquiries, or even just to say hi :)</p>
         <div id="socialBox">
           <ul>
-            <li>LinkedIn</li>
-            <li>Email</li>
-            <li>GitHub</li>
+            <li><a href="https://www.linkedin.com/kenny-scott/">LinkedIn</a></li>
+            <li><a href="mailto:kenscott0926@gmail.com">Email</a></li>
+            <li><a href="https://github.com/kxs6629">GitHub</a></li>
           </ul>
         </div>
       </div>
