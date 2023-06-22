@@ -1,0 +1,70 @@
+html{
+    font-family: 'Nunito', sans-serif;
+}
+
+.navbar-custom{
+    background-color: #EB5F49;
+}
+
+.navbar{
+    color: #E0E1D6;
+}
+body, .card-img{
+    /* Blue on white */
+    /* background-color: #CCCCCC; */
+    /* color: #3B6E93; */
+    padding-top: 3em;
+    background-color: #E0E1D6;
+    color: #393E41;
+}
+.card-header{
+    background-color: #E0E1D6;
+    color:#E0E1D6;
+}
+.card-body{
+    background-color: #B8B9B0;
+}
+
+.btn.btn-primary{
+    background-color:#EB5F49;
+    border-color: #EB5F49;
+}
+
+#accordion .btn-link{
+    color:#EB5F49;
+
+}
+
+#accordion a{
+    color: #EB5F49;
+}
+
+#accordion .card-body{
+    background-color: #B8B9B0;
+}
+#about-me{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.navbar-brand, .nav-link{
+    color: #393E41;
+}
+a{
+    color:#E0E1D6;
+}
+.lead, .jumbotron, .display-4{
+    color: #E0E1D6;
+}
+.jumbotron{
+    padding-top: 5em;
+    background-color: #EB5F49;
+}
+
+
+@media only screen and (max-width: 600px){
+  .card{
+      margin-left: auto;
+      margin-right: auto;
+    }  
+}

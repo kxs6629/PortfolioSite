@@ -1,81 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kenny Scott's Portfolio Page</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/fullpage.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="https://kit.fontawesome.com/08c5a560dd.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <script src="assets/scripts/main.js"></script>
-    <script src="assets/scripts/fullpage.min.js"></script>
-  <!-- <div id="bgMenu">
-    <svg width="100",height="100">
-      <circle cx="50" cy="50" r="40" fill="#C7CCB9"/>
-    </svg>
-  </div> -->
-
-  <div class="navMenu">
-      <a href ="#welcomeScreen">Welcome</a>
-      <div id="navLinks">
-        <a href ="#experienceScreen">Experience</a>
-        <a href ="#projectScreen">Projects</a>
-        <a href ="#contactScreen">Contact</a>
-    </div>
-    <a href="javascript:void(0);" class="icon" onclick="navFunction()">
-      <i class="fa-sharp fa-regular fa-bars"></i>
-    </a>
-  </div>
-
-  
- <div id="fullpage">
-
-    <div class="section">
-      <div class = "contentPage" id="welcomeScreen">
-      <p>Hi, my name is Kenny Scott!</p>
-      <p>I'm a web and mobile developer that is excited to break into the professional industry</p>
-        <span id="mii_fr"> <img src="./assets/media/images/mii_fr.png" alt="Picture of me!"></span>
+<html lang = "en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>Portfolio Site</title>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar fixed-top navbar-light navbar-custom">
+      <a class="navbar-brand" href="#">Ken Scott's Portfolio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active"> <a href="#">Home<span class="sr-only">(current)</span></a></li>
+          <li class="nav-item"> <a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"> <a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
       </div>
+    </nav>
+
+    <!--Content-->
+    <div class="jumbotron text-center">
+      <h1 class ="display-4">Ken Scott</h1>
+      <p class="lead">Recent gradute in Web and Mobile Development at RIT</p>
     </div>
 
-    <div class="section">
-      <div class = "contentPage" id="experienceScreen">
-        <h1>Experience</h1>
-        <p>As I approach graduation, I can say that I have an extensive academic background, and have worked in a professional environment via semester long internships.</p>
-        <div id = "resumeButton">
-          <span id="reusmeIcon"><img src="./assets/media/icons/resume_icon.png" alt="Resume Icon"></span>
-          <a href="assets/media/docs/resume.pdf">View my resume here</a>
+    </div>
+    <div class="text-center">
+    <h1>Who am I?</h1>
+    <!-- <img src="assets/images/me_irl.png" alt="me_irl" class="rounded" style="max-width: 20%;"> -->
+    <p id="about-me">
+      Ever since I was young I have been interested in computers and how they work. As I continued to grow, so did my interest in computing. After making simple programs and building my own computer in highschool, I knew that computing was my passion and that I wanted to pursue a career in computing. When I graduated high school, I wanted to learn how to grow as a developer, so I applied to Rochester Institute of Technology. By spring of my second year in college, I decided that I wanted to focus on making software that can help people on the go. As of now, I am a fourth year student at RIT studying Web and Mobile Development. 
+      This semester, I'm learning how to build and deploy RESTful web services, and mobile applications for iOS. As I learn more about application development, I am excited to continue learning and growing as a developer. 
+      At the moment, I am looking for a junior level developer position that allows me to showcase what I learned so far in addition to furthering my skills in a real world environment.
+    </p>
+    </div>
+
+    <div class="container">
+    <div class ="row">
+      <!--Put cards in here-->
+      <div class="col-sm">
+        <div class="card" style="width:16rem;">
+          <img class="card-img" src="assets/images/resume_icon.png" alt="resume icon">
+          <div class="card-body">
+            <h5 class="card-title">Resume</h5>
+            <p class="card-text">Want a glance at my current experience? This resume has the most
+              up to date information.
+            </p>
+            <a href="resume.pdf" class="btn btn-primary">View Resume</a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="section">
-      <div class = "contentPage" id="projectScreen">
-        <h1>Projects</h1>
-        <p>Here are some examples of my recent work:</p>
-      </div>
-    </div>
-
-    <div class="section">
-      <div class = "contentPage" id="contactScreen">
-        <h1>Contact</h1>
-        <p>If you've made it this far, thank you for reading! Feel free to reach out to me using the following platforms for further inquiries, or even just to say hi :)</p>
-        <div id="socialBox">
-          <ul>
-            <li><a href="https://www.linkedin.com/kenny-scott/">LinkedIn</a></li>
-            <li><a href="mailto:kenscott0926@gmail.com">Email</a></li>
-            <li><a href="https://github.com/kxs6629">GitHub</a></li>
-          </ul>
+      <div class="col-sm">
+        <div class="card" style="width:16rem;">
+          <img class="card-img" src="assets/images/project_icon.png" alt="project icon">
+          <div class="card-body">
+            <h5 class="card-title">Projects</h5>
+            <p class="card-text">Curious about my past projects? This page has examples of past work
+              as well as ongoing projects.
+            </p>
+            <a href="projects.html" class="btn btn-primary">View Projects</a>
+          </div>
         </div>
       </div>
-    </div>
 
-  </div>
-  </body>
+          <div class="col-sm">
+            <div class="card" style="width:16rem;">
+              <img class="card-img" src="assets/images/contact_icon.png" alt="contact icon">
+              <div class="card-body">
+                <h5 class="card-title">Contact</h5>
+                <p class="card-text">If you're looking to contact me, head over to my contact page
+                  to find out how.
+                </p>
+                <a href="contact.html" class="btn btn-primary">Contact Me</a>
+              </div>
+          </div>
+        </div>
+      </div> 
+      </div>
+</body>
 </html>
