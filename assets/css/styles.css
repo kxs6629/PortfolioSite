@@ -6,31 +6,79 @@
 html{
     background-color: #1D2021;
     color:  #fff;
-    font-family: 'Poppins', sans-serif;;
+    font-family: 'Inter', sans-serif;
+}
+
+h1{
+    font-weight: normal;
+    font-size: 96px;
+}
+
+p{
+    font-size: 48px;
 }
 
 .navMenu{
     position: static;
     padding: 1em;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
-.navLinks{
-    flex-basis: auto;
+#navLinks{
+    display: flex;
+    gap: 20px;
+    font-size: 24px;
 }
 
-.navLinks a:link{
-    list-style-type: none;
+a:link, a:visited {
+    text-decoration: none;
     color:#fff;
 }
 
-#nameTile{
-    font-size: 24px;
+a:active, a:hover{
     text-decoration: underline;
+}
+
+#nameTile{
+    font-size: 48px;
     text-align: center;
 }
 
-#lowerBound{
-    text-decoration: none;
+#subHeader{
+    font-size: 24px;
+}
+
+.contentPage{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#introText{
+    margin-right: 20%;
+}
+
+#subText{
+    font-size: 64px;
+    margin-right: 15%;
+    opacity: 25%;
+}
+
+#bottomText{
+    font-size: 24px;
+    opacity: 35%;
+    margin-top: 20%;
+}
+
+#aboutMe{
+    margin-bottom: 15%;
+    text-align: left;
+    padding: 5em;
+}
+
+#aboutHeader{
+    font-size: 64px;
+    margin-bottom: 10%;
 }
