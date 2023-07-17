@@ -31,8 +31,6 @@ a:active, a:hover{
     background-color: transparent;
     width:500px;
     height:300px;
-    border-radius: 10px;
-    border: 1px solid #1D2021;
     perspective: 1000px;
 }
 
@@ -52,9 +50,11 @@ a:active, a:hover{
 .cardFront, .cardBack{
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 80%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    border-radius: 10px;
+
 }
 
 .cardFront{
@@ -115,6 +115,11 @@ a:active, a:hover{
     margin-bottom:5%;
 }
 
+.slide{
+    background-color: rgba(179, 186, 188, 0.25);
+    border-radius: 15px;
+}
+
 #navLinks{
     display: flex;
     gap: 30px;
@@ -163,9 +168,30 @@ a:active, a:hover{
 #projectScreen p{
     margin-bottom: 10%;
 }
+
 #projectSlides{
-    /* display: flex; */
-    /* flex-flow: row wrap; */
-    /* justify-content: center; */
-    /* align-items: center; */
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#projectSlides h2{
+    text-decoration: underline;
+    font-size: 48px;
+}
+
+#projectSlides p{
+    font-size: 36px;
+}
+
+#projectSlides img{
+    max-width: 40%;
+    max-height: 20%;
+}
+
+#projectSlides a{
+    color: #A9CEF4;
+}
+
+#projectSlides a:visited{
+    color: #FE5F55;
 }
