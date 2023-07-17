@@ -29,10 +29,10 @@ a:active, a:hover{
 
 .card{
     background-color: transparent;
-    width:300px;
-    height:200px;
-    border: 1px solid #1D2021;
+    width:500px;
+    height:300px;
     border-radius: 10px;
+    border: 1px solid #1D2021;
     perspective: 1000px;
 }
 
@@ -60,21 +60,39 @@ a:active, a:hover{
 .cardFront{
     background-color: rgba(179, 186, 188, 0.25) ;
     color:#fff;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardFront p, .cardFront span{
+    flex-basis: 100%;
 }
 
 .cardBack{
     background-color: rgba(179, 186, 188, 0.25);
     color: #fff;
     transform: rotateY(180deg);
+    text-align: left;
+}
+
+.cardBack h2{
+    text-decoration: underline;
+    font-weight: normal;
+    text-align: center;
+    font-size: 48px;
 }
 
 .cardBack p{
-    text-align: left;
     font-size: 24px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .cardBack ul{
-    text-align: left;
+    padding-left: 10%;
+    font-size: 24px;
     list-style-type: disc;
 }
 
@@ -94,7 +112,7 @@ a:active, a:hover{
 
 .sectionHeader{
     font-size: 64px;
-    margin-bottom:10%;
+    margin-bottom:5%;
 }
 
 #navLinks{
@@ -135,20 +153,19 @@ a:active, a:hover{
 }
 
 #cardDeck{
-    padding-left: 10%;
-    padding-right: 10%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 50%;
+    gap: 30%;
     justify-content: center;
 }
 
-#cardDeck h2{
-    font-weight: normal;
-    text-decoration: underline;
+#projectScreen p{
+    margin-bottom: 10%;
 }
-
-#cardBack{
-    /* put some sort of spacing here so text isn't on the edges */
+#projectSlides{
+    /* display: flex; */
+    /* flex-flow: row wrap; */
+    /* justify-content: center; */
+    /* align-items: center; */
 }
