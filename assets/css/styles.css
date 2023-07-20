@@ -120,7 +120,26 @@ a:active, a:hover{
     border-radius: 15px;
 }
 
+.navDot{
+    height: 20px;
+    width: 20px;
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 50%;
+}
+
+#dotList{
+    display:flex;
+    flex-direction: column;
+    gap: 6px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    margin: 10px;
+}
+
 #navLinks{
+    z-index: 1;
     display: flex;
     gap: 30px;
     font-size: 24px;
@@ -190,8 +209,23 @@ a:active, a:hover{
 
 #projectSlides a{
     color: #A9CEF4;
+    font-size: 24px;
 }
 
 #projectSlides a:visited{
     color: #FE5F55;
+}
+
+#contactBox{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#contactBox #formBox{
+    width: 50%;
+}
+
+#socialBox{
+    background-color: #A9CEF4;
 }
