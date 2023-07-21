@@ -136,6 +136,7 @@ a:active, a:hover{
     bottom: 10px;
     left: 10px;
     margin: 10px;
+    z-index: 1;
 }
 
 #navLinks{
