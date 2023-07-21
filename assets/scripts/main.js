@@ -13,6 +13,19 @@ $(document).ready(function() {
 });
 
 /**
+	thinking of how to assign each navDot a nav value
+	might just be easier to make the spans a tags for navigation
+	then have the page check which section it's on and update accordingly
+*/
+let navTuple = [
+	[0,"#homeScreen"],
+	[1,"#aboutScreen"],
+	[2,"#experienceScreen"],
+	[3,"#projectScreen"],
+	[4,"#contactScreen"],
+]
+
+/**
 	There's some bugs here atm, but a basic proof of concept exsits
 	Behavior should be reflected based on navigation progress, not just scroll
 	Else this leads to behavior currently exhibted when scrolling faster than fullpage can scroll

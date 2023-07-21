@@ -8,10 +8,16 @@ The goal of this project is to make an updated version of my personal site with 
 
 1. Finish html scaffolding
 2. Create style sheet in css to mirror designs laid out in prototype
+  - Additionally implement mobile experience CSS
 3. Add javascript functionality
     - Project Slideshow
     - Navigation Menu
     - Navigation dots on the bottom left of screen
+4. Debug
+
+## Known Issues
+
+1. Navigation between sections removes navigation bar and progress dots 
 
 ## Content
 
