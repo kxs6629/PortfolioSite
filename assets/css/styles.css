@@ -97,14 +97,17 @@ a:active, a:hover{
 }
 
 .navMenu{
-    position: static;
+    position: fixed;
+    width:95%;
     padding: 1em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    z-index: 1;
 }
 
 .contentPage{
+    height: max-content;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -117,33 +120,14 @@ a:active, a:hover{
 
 .slide{
     background-color: rgba(179, 186, 188, 0.25);
-    border-radius: 15px;
-}
-
-.navDot{
-    height: 20px;
-    width: 20px;
-    border-style: solid;
-    border-color: #fff;
-    border-radius: 50%;
-}
-
-#dotList{
-    display:flex;
-    flex-direction: column;
-    gap: 6px;
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    margin: 10px;
-    z-index: 1;
+    border-radius: 10px;
 }
 
 #navLinks{
-    z-index: 1;
     display: flex;
     gap: 30px;
     font-size: 24px;
+    list-style-type: none;
 }
 
 #nameTile{
@@ -172,9 +156,22 @@ a:active, a:hover{
 }
 
 #aboutMe{
-    margin-bottom: 15%;
+    /* height:max-content;
     text-align: left;
-    padding: 5em;
+    padding-left: 3vw; */
+}
+
+#resumeButton{
+    background-color: #FE5F55;
+    border: none;
+    border-radius: 10px;
+
+    align-content: center;
+    text-align: center;
+    text-decoration: none;
+
+    width: 15%;
+    height: 50%;
 }
 
 #cardDeck{
@@ -217,16 +214,18 @@ a:active, a:hover{
     color: #FE5F55;
 }
 
-#contactBox{
-    display:flex;
+#contactScreen{
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
-}
-
-#contactBox #formBox{
-    width: 50%;
+    align-content: center;
+    gap: 2em;
 }
 
 #socialBox{
-    background-color: #A9CEF4;
+    background-color: rgba(169, 206, 244,.5);
+}
+
+#socialBox ul{
+    list-style: none;
 }

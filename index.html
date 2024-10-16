@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kenny Scott's Portfolio Page</title>
+    <title>Ken Scott's Portfolio Page</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/fullpage.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,32 +21,24 @@
 
     <div class="navMenu">
       <div id="nameTile">
-          <p>Kenny Scott</p><hr><p id="subHeader">Web Developer</p>
+          <p>Ken Scott</p><hr><p id="subHeader">Full Stack Developer</p>
       </div>
 
-      <div id="navLinks">
-        <a href ="#welcomeScreen">Home</a>
-        <a href ="#aboutMe">About</a>
-        <a href ="#experienceScreen">Experience</a>
-        <a href ="#projectScreen">Projects</a>
-        <a href ="#contactScreen">Contact</a>
-      </div>
-    </div>
-
-    <div id="dotList">
-      <a href="#welcomeScreen" class="navDot"></a>
-      <a href="#aboutMe" class="navDot"></a>
-      <a href="#experienceScreen" class="navDot"></a>
-      <a href="#projectScreen" class="navDot"></a>
-      <a href="#contactScreen" class="navDot"></a>
+      <ul id="navLinks">
+        <li data-menuanchor="welcome"><a href ="#1">Home</a></li>
+        <li data-menuanchor="about"><a href ="#2">About</a></li>
+        <li data-menuanchor="experience"><a href ="#3">Experience</a></li>
+        <li data-menuanchor="project"><a href ="#4">Projects</a></li>
+        <li data-menuanchor="contact"><a href ="#5">Contact</a></li>
+      </ul>
     </div>
 
     <div id="fullpage">
 
       <div class="section">
         <div class = "contentPage" id="welcomeScreen">
-        <h1 id="introText">Hi, I'm Kenny Scott</h1>
-        <p id="subText">a web and mobile developer</p>
+        <h1 id="introText">Hi, I'm Ken Scott</h1>
+        <p id="subText">a full stack developer</p>
           <div>
             <p id="bottomText">Scroll down to navigate</p>
             <svg fill="#ffffff" height="50px" width="50px" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"></path> </g></svg>
@@ -57,7 +49,10 @@
       <div class="section">
         <div class="contentPage" id="aboutMe">
           <h1 class="sectionHeader">Who Am I?</h1>
-          <p>I’m a recent web and mobile graduate as of this May. I have a passion for creating and implementing solutions to both the full stack of web development. I'm currently in the job market for a junior devloper position to kick off my professional career!</p>
+          <p>I'm a full stack software developer. I'm currently working with internal teams to update and optimize existing applications to meet business requirements.</p>
+          <div id="resumeButton">
+            <a href="assets/media/docs/resume.pdf">Click here to view my resume!</a>
+          </div>
         </div>
       </div>
 
@@ -103,6 +98,23 @@
                       </ul>
                     </div>
                   </div>
+              </div>
+
+              <div class="card">
+                <div class="cardInterior">
+                  <div class="cardFront">
+                    <p> Databases</p>
+                  </div>
+                  <div class="cardBack">
+                    <h2>Skill Overview</h2>
+                    <p>Based on past projects, I have experience in the following database technologies:</p>
+                    <ul>
+                      <li>MySQL</li>
+                      <li>PostgreSQL</li>
+                      <li>mongoDB</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
 
               <div class = "card">
@@ -163,29 +175,31 @@
           <h1 class="sectionHeader">Contact</h1>
           <p>If you've made it this far, thank you for reading! Feel free to reach out to me using the following platforms for further inquiries, or even just to say hi :)</p>
           
-          <div id="contactBox">
-              <div id="socialBox">
-                <ul>
-                  <li><a href="https://www.linkedin.com/kenny-scott/">LinkedIn</a></li>
-                  <li><a href="mailto:kenscott0926@gmail.com">Email</a></li>
-                  <li><a href="https://github.com/kxs6629">GitHub</a></li>
-                </ul>
-              </div>
-      
-              <div id="formBox">
-                <h2>Want to get in touch? Send me a message here!</h2>
-                <form method="post" action="https://forms.un-static.com/forms/1ebe22430c05271d80ad1589e4c1a7289c3aad34">
-                  <label for="email">Email</label>
-                  <input type="text" id="email" name="email" placeholder="Email address so I can respond to you">
-                  <label for="message">Comment</label>
-                  <input type="text" id="message" name="message" placeholder="Message here">
-                  <input type="submit" value="Submit">
-                </form>
-                <p><small>(Powered by <a rel="nofollow" href="https://un-static.com/">Un-static Forms</a>)</small></p>
-              </div>
+
+          <div id="contactChild">
+            <div id="socialBox">
+              <ul>
+                <li><a href="https://www.linkedin.com/kenny-scott/">LinkedIn</a></li>
+                <li><a href="mailto:kenscott0926@gmail.com">Email</a></li>
+                <li><a href="https://github.com/kxs6629">GitHub</a></li>
+              </ul>
+            </div>
+
+            <div id="formBox">
+              <h2>Want to get in touch? Send me a message here!</h2>
+              <form method="post" action="https://forms.un-static.com/forms/1ebe22430c05271d80ad1589e4c1a7289c3aad34">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Email address so I can respond to you">
+                <label for="message">Comment</label>
+                <input type="text" id="message" name="message" placeholder="Message here">
+                <input type="submit" value="Submit">
+              </form>
+              <p><small>(Powered by <a rel="nofollow" href="https://un-static.com/">Un-static Forms</a>)</small></p>
+            </div>
             </div>
           </div>
       </div>
+
     </div>
   </body>
 </html>
