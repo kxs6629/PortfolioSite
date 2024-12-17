@@ -6,6 +6,8 @@ $(document).ready(function() {
 		navigation: true,
 		anchors: ['welcome','about','experience','project','contact'],
 		menu:"#navMenu",
+		slidesNavigation: true,
+		slidesNavPosition :'bottom',
 		parallax: true
 	});
 });

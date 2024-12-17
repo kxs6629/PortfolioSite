@@ -120,7 +120,29 @@ a:active, a:hover{
 
 .slide{
     background-color: rgba(179, 186, 188, 0.25);
-    border-radius: 10px;
+    padding:25px;
+    /* border-radius: 10px; */
+}
+
+/* Attempting to center nav dots since the arrows are touching the vertical nav dots
+#fp-nav ul li a span, 
+.fp-slidesNav ul li a span{
+    display: flex;
+    justify-content: center;
+    background: white;
+   
+} */
+
+#WIP{
+    position: absolute;
+    right: 50px;
+    bottom: 100px;
+    background-color: #ffcc00;
+    color: #000;
+    rotate: 15deg;
+    max-width: 250px;
+    padding: 10px;
+
 }
 
 #navLinks{
@@ -156,9 +178,8 @@ a:active, a:hover{
 }
 
 #aboutMe{
-    /* height:max-content;
-    text-align: left;
-    padding-left: 3vw; */
+   text-align: left;
+   padding:25px;
 }
 
 #resumeButton{
@@ -170,8 +191,10 @@ a:active, a:hover{
     text-align: center;
     text-decoration: none;
 
-    width: 15%;
-    height: 50%;
+    width: 200px;
+    height: 100px;
+
+    align-self: center;
 }
 
 #cardDeck{
@@ -182,13 +205,14 @@ a:active, a:hover{
     justify-content: center;
 }
 
-#projectScreen p{
+/* #projectScreen p{
     margin-bottom: 10%;
-}
+} */
+
+
 
 #projectSlides{
-    margin-left: 25%;
-    margin-right: 25%;
+   
 }
 
 #projectSlides h2{
@@ -215,17 +239,25 @@ a:active, a:hover{
 }
 
 #contactScreen{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
     gap: 2em;
+}
+
+#contactChild{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 #socialBox{
     background-color: rgba(169, 206, 244,.5);
+    width: 25%;
 }
 
 #socialBox ul{
     list-style: none;
+}
+
+#formBox{
+    width: 25%;
 }
