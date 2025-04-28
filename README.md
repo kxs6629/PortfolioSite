@@ -19,6 +19,8 @@ The goal of this project is to make an updated version of my personal site with 
 
 1. Navigation between sections removes navigation bar and progress dots 
   - This might be fixable using the anchors options provided by fullpage.js
+2. Slides are incorrectly displaying (i.e. 4 slides in code, 3 showing)
+3. Z layer of some elements need to be fixed 
 
 ## Content
 
