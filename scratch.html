@@ -7,8 +7,49 @@
     <title>Testing improvements</title>
 </head>
 <body>
-    <section>test1</section>
-    <section>test2</section>
+    <!-- 
+    Some goals for the rework:
+    * Implement fullscreen content display with raw html/css
+    * adding onto last point- remove jquery / fullpage to reduce load
+    * Implement project slideshow (raw dog)
+        - Rework the skills overview? idk how i feel about the mouse over card flip especially on mobile
+    * Clean up last section of forms
+    * MOBILE VERSION PLEASE MAN
+      -->
+
+     <div class="navMenu">
+      <div id="nameTile">
+          <p>Ken Scott</p><hr><p id="subHeader">Full Stack Engineer</p>
+      </div>
+
+      <ul id="navLinks">
+        <li data-menuanchor="welcome"><a href ="#1">Home</a></li>
+        <li data-menuanchor="about"><a href ="#2">About</a></li>
+        <li data-menuanchor="experience"><a href ="#3">Experience</a></li>
+        <li data-menuanchor="project"><a href ="#4">Projects</a></li>
+        <li data-menuanchor="contact"><a href ="#5">Contact</a></li>
+      </ul>
+
+    </div>
+    <section>
+        <h1>Test 1</h1>
+        <p>this is some content</p>
+        <p id="bottomText"> scroll down for more!</p>
+    </section>
+    
+    <section>
+        <h1>Who Am I?</h1>
+        <p>I'm a full stack software developer. I'm currently working with internal teams to update and optimize existing applications to meet business requirements.</p>
+        <div id="resumeButton">
+            <a href="assets/media/docs/resume.pdf">Click here to view my resume!</a>
+        </div>
+    </section>
+
+    <section>
+        <h1>An Overview Of My Skills</h1>
+
+    </section>
+
 
 </body>
 </html>
