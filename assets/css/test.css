@@ -3,11 +3,12 @@
     padding:0;
 }
 
+/* Font Size + Styling */
 
 section{
     height:100vh;
     
-    border:8px solid black;
+    /* border:8px solid black; */
     
     display:flex;
     flex-grow: 1;
@@ -42,4 +43,24 @@ section{
 #bottomText{
     position: absolute;
     bottom:10%;
+}
+
+
+#cardDeck{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:3em;
+}
+
+.cardFront,.cardBack{
+    transition: visibility 10ms;
+    /* transition-timing-function: ease; */
+}
+
+.cardFront{
+    visibility: visible;
+}
+.cardBack{
+    visibility: hidden;
 }
