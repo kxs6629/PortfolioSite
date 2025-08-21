@@ -1,29 +1,35 @@
-let collection = document.getElementsByClassName("skillCard");
+let cardDeck = document.getElementsByClassName("skillCard");
+let slideList = document.getElementsByClassName("projectSlide");
+let slideCount = 0;
 
-for (let i = 0; i < collection.length; i++) {
-    collection[i].addEventListener("click",function(){
+slideList[0].style.display = "inherit"
+
+for (let i = 0; i < cardDeck.length; i++) {
+    cardDeck[i].addEventListener("click",function(){
         flipCard(this);
     })
 };
-function flipCard(e){
-    //get the element that was clicked
-    console.log(e)
-    console.log(e.classList) 
-    console.log(e.classList.DOMTokenList)
-    console.log(e.classList.children)
 
+function flipCard(e){
     let daycare = e.children;
     for(let i = 0;  i < daycare.length; i++){
         console.log(daycare[i])
-        daycare[i].classList.toggle('cardFront')
-        daycare[i].classList.toggle('cardBack')
+        daycare[i].classList.toggle('hide')
+    }
+}
 
-        // daycare[i].toggle()
+function showSlide(index){
+    slideList[slideCount].style.display = "none"
+    if(slideCount+index > slideList.length-1){
+        slideCount = 0
+    }
+    else if(slideCount+index < 0){
+        slideCount = slideList.length-1
+    
+    }
+    else{
+        slideCount += index;
     }
 
-    // e.classList.DOMTokenList.toggle('cardFront');
-    // e.classList.DOMTokenList.toggle('cardBack');
-    console.log('these should be toggled by now')
-
-    //change the styling so that the visibility toggles between card front/back
+    slideList[slideCount].style.display = "inherit"    
 }
