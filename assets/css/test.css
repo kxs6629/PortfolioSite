@@ -108,9 +108,8 @@ button{
     display: flex;
     width: 50vw;
     flex-direction: row;
-    /* justify-content: space-around; */
-
 }
 #leftSide,#rightSide{
     flex-basis: 50%;
+    text-align: center;
 }
