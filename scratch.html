@@ -17,8 +17,9 @@
     * MOBILE VERSION PLEASE MAN
       -->
 
-     <div class="navMenu">
-      <div id="nameTile">
+      <!-- header -->
+    <div class="navMenu">
+        <div id="nameTile">
           <p>Ken Scott</p><hr><p id="subHeader">Full-Stack Engineer</p>
       </div>
 
@@ -29,14 +30,18 @@
         <li data-menuanchor="project"><a href ="#4">Projects</a></li>
         <li data-menuanchor="contact"><a href ="#5">Contact</a></li>
       </ul>
+      <!-- header -->
 
+      <!-- intro -->
     </div>
     <section>
         <h1>Hi, I'm Ken Scott</h1>
         <p>A full-stack software engineer</p>
         <p id="bottomText"> scroll down for more!</p>
     </section>
+    <!-- intro -->
     
+    <!-- about section -->
     <section>
         <h1>Who Am I?</h1>
         <p>I'm a full-stack software engineer. I'm currently working with internal teams to update and optimize existing applications to meet business requirements.</p>
@@ -44,7 +49,9 @@
             <a href="assets/media/docs/resume.pdf">Click here to view my resume!</a>
         </div>
     </section>
+    <!-- about section -->
 
+    <!-- skill section -->
     <section>
         <h1>An Overview Of My Skills</h1>
         <div id="cardDeck">
@@ -111,39 +118,53 @@
                 </div>
             </div>
         </div>
-        <!-- Finish skills section -->
     </section>
 
     <!-- Projects section -->
     <section>
         <h1>Projects!</h1>
-        <button onclick="showSlide(-1)">-</button>
-        <button onclick="showSlide(1)">+</button>
+        <button onclick="showSlide(-1)"><-</button>
+        <button onclick="showSlide(1)">-></button>
         <div class="projectSlide">
-            <h2>test slide</h2>
-            <img src="assets/media/images/MixtapeMaker.png" alt="Mixtape Maker Home Screen">
+            <h2> hey dumbass</h2>
+            <p>fill out your slides :3 and fix the buttons</p>
+        </div>
+        <div class="projectSlide">
+            <h2>Business Landing Site</h2>
+            <img src="assets/media/images/MixtapeMaker.png" alt="Business Landing Site">
             <p>test content</p>
+            <a href="https://hurstplumbing.net/">Project Link</a>
+        </div>
+        <div class="projectSlide">
+            <h2>Workout Visualizer</h2>
+            <img src="assets/media/images/MixtapeMaker.png" alt="Workout Visualizer Project Screenshot">
+            <p>test content</p>
+            <a href="https://github.com/kxs6629/WorkoutVisualizer">Project Link</a>
         </div>
 
         <div class="projectSlide">
-            <h2>test slide</h2>
-            <img src="assets/media/images/doodlenoodle.png" alt="Doodle Noodle Start Screen">
-            <p>fuck :3</p>
+            <h2>Banana Split Race</h2>
+            <img src="assets/media/images/BananaSplit.png" alt="Banana Split Race Main Menu">
+            <p>test content</p>
+            <a href="https://baronvonvraptor.itch.io/banana-split-run">Project Link</a>
         </div>
 
         <div class="projectSlide">
-            <h2>link slide</h2>
-            <p>Curious about other projects not listed here? Use this link to view my GitHub profile:</p>
-            <a href="https://github.com/kxs6629">GitHub Link</a>
-
+            <h2>Discord Bot</h2>
+            <img src="assets/media/images/MixtapeMaker.png" alt="Discord Bot">
+            <p>test content</p>
+            <a href="">Project Link</a>
         </div>
     </section>
+    <!-- Project Section -->
 
+    <!-- Contact Section -->
     <section id="contactSection">
         <h1>Contact</h1>
+        <p>If you made it this far, thank you for reading! Feel free to reach out via the methods below for further inquiries, or just to say hi :)</p>
         <div id="splitSection">
             <div id="leftSide">
-                <h2>socials!</h2>
+                <h2>Connect With Me Using:</h2>
                 <ul>
                     <li><a href="https://www.linkedin.com/kenny-scott/">LinkedIn</a></li>
                     <li><a href="mailto:kenscott0926@gmail.com">Email</a></li>
@@ -151,11 +172,12 @@
                 </ul>
             </div>
             <div id="rightSide">
+                <h2>Want to get in touch? Send me a message here! </h2>
                 <form method="post" action="https://forms.un-static.com/forms/1ebe22430c05271d80ad1589e4c1a7289c3aad34">
                 <label for="email">Email</label>
                 <input type="text" id="email" name="email" placeholder="Email address so I can respond to you">
                 <label for="message">Comment</label>
-                <input type="text" id="message" name="message" placeholder="Message here">
+                <textarea type="text" id="message" name="message" placeholder="Enter your message here!"></textarea>
                 <input type="submit" value="Submit">
               </form>
               <p><small>(Powered by <a rel="nofollow" href="https://un-static.com/">Un-static Forms</a>)</small></p>

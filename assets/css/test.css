@@ -23,6 +23,7 @@ section{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    padding:3em;
 }
 
 .navMenu{
@@ -37,7 +38,7 @@ section{
 
 #navLinks{
     display: flex;
-    gap: 30px;
+    gap: 1em;
     font-size: 24px;
     list-style-type: none;
 }
@@ -52,6 +53,9 @@ section{
     bottom:10%;
 }
 
+#resumeButton{
+    background-color: red;
+}
 
 #cardDeck{
     display: flex;
@@ -67,7 +71,10 @@ section{
 .skillCard{
     cursor:pointer;
     flex-basis:25%;
-    
+    background-color: aqua;
+    border-radius: 5px;
+    box-shadow: 3px 5px #888;
+      /*pretty up the cards  */
 }
 
 .cardFront,.cardBack{
@@ -95,7 +102,10 @@ button{
 
 .projectSlide{
     display: none;
-    /* these value are used after inheriting the display when showSlide() is called */
+    /*
+        These value are used after inheriting the display when showSlide() is called
+        (also pretty up the slides
+    */
     flex-direction: column;
 }
 
@@ -104,12 +114,68 @@ button{
     max-height: 10vh;
 }
 
+#contactSection{
+    gap:1em;
+}
+
 #splitSection{
     display: flex;
     width: 50vw;
     flex-direction: row;
+    gap:2em;
 }
 #leftSide,#rightSide{
     flex-basis: 50%;
     text-align: center;
+    border-radius: 5px;
+    box-shadow: 3px 5px #888;
+    padding:1em;
 }
+
+#leftSide{
+    background-color: yellow;
+}
+
+#leftSide ul{
+    list-style-type: none;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 75%;
+}
+
+#rightSide{
+    background-color: brown;
+}
+
+#rightSide form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#rightSide label{
+    align-self: start;
+}
+
+#rightSide input[type=text]{
+    width:20em;
+    height: 25px;
+}
+
+#rightSide input[type=submit]{
+    width: 100px;
+    height:25px
+}
+
+#rightSide form{
+    /*
+        to do here:
+        * Pretty up text input fields
+        * fix submit button 
+    */
+
+}
+
