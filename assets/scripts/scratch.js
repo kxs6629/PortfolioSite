@@ -1,5 +1,6 @@
 let cardDeck = document.getElementsByClassName("skillCard");
 let slideList = document.getElementsByClassName("projectSlide");
+
 let slideCount = 0;
 
 slideList[0].style.display = "inherit"

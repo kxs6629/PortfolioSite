@@ -13,7 +13,32 @@
     padding:0;
 }
 
+html{
+    background-color: #1D2021;
+    color:  #fff;
+    font-family: 'Inter', sans-serif;
+}
+
 /* Font Size + Styling */
+h1{
+    font-size:4rem;
+    font-weight: normal;
+}
+
+h2{
+    font-size:3rem;
+    font-weight: normal;
+}
+
+h3{
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+p{
+    font-size:2rem;
+}
+
 
 section{
     height:100vh;    
@@ -23,28 +48,40 @@ section{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding:3em;
+    padding:0em 3em;
 }
 
 .navMenu{
+    background-color:#1D2021;
     position: fixed;
     width:95%;
     padding: 1em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     z-index: 1;
 }
 
 #navLinks{
     display: flex;
     gap: 1em;
-    font-size: 24px;
+    font-size: 2rem;
     list-style-type: none;
 }
 
-#nameTile{
-    font-size: 48px;
+a:link, a:visited {
+    text-decoration: none;
+    color:#fff;
+}
+
+a:active, a:hover{
+    text-decoration: underline;
+}
+
+
+#nameTile p{
+    font-size: 3rem;
     text-align: center;
 }
 
@@ -54,7 +91,12 @@ section{
 }
 
 #resumeButton{
+    font-size:1.5rem;
+    padding: 10px;
+    border-radius: 5px;
+    height:2vw;
     background-color: red;
+    align-self: end;
 }
 
 #cardDeck{
@@ -66,14 +108,19 @@ section{
     width: 50vw;
     align-content: center;
     justify-content: center;
+    cursor:pointer;
 }
 
 .skillCard{
     cursor:pointer;
     flex-basis:25%;
-    background-color: aqua;
+    padding:5px;
+    background-color: rgba(179, 186, 188, 0.25) ;
     border-radius: 5px;
-    box-shadow: 3px 5px #888;
+    box-shadow: 3px 5px rgba(0, 0, 0, 0.75);
+    height: 8vw;
+    align-content: center;
+    overflow:scroll
       /*pretty up the cards  */
 }
 
@@ -87,8 +134,28 @@ section{
     animation-duration: 100ms;
 }
 
+.cardFront{
+    text-align: center;
+}
+
 .cardBack{
     flex-direction: column;
+}
+
+.cardBack h3{
+    text-decoration: underline;
+}
+
+.cardBack p{
+    font-size: 1rem;
+}
+
+.cardBack ul{
+    list-style-type: disc;
+}
+
+.cardBack li{
+    list-style-position: inside;
 }
 
 .hide{
@@ -100,13 +167,25 @@ button{
     height: 50px;
 }
 
+#slideController{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:2em;
+}
+
 .projectSlide{
+    flex-grow: 2;
     display: none;
     /*
         These value are used after inheriting the display when showSlide() is called
         (also pretty up the slides
     */
     flex-direction: column;
+    align-items: center;
 }
 
 .projectSlide img{
@@ -125,35 +204,36 @@ button{
     gap:2em;
 }
 #leftSide,#rightSide{
+    padding:1em;
     flex-basis: 50%;
     text-align: center;
     border-radius: 5px;
-    box-shadow: 3px 5px #888;
-    padding:1em;
+    box-shadow: 3px 5px rgba(0, 0, 0, 0.75);
 }
 
 #leftSide{
-    background-color: yellow;
+    background-color: rgba(169, 206, 244,.5);
+    font-size: 2rem;
 }
 
 #leftSide ul{
-    list-style-type: none;
     list-style-type: none;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     height: 75%;
+    align-items:start;
 }
 
 #rightSide{
-    background-color: brown;
+    background-color: rgba(119, 152, 185, 0.5);
 }
 
 #rightSide form{
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-evenly;
+    padding:1em;
 }
 
 #rightSide label{
@@ -170,7 +250,13 @@ button{
     height:25px
 }
 
-#rightSide form{
+#rightSide #subText{
+    font-size:1rem;
+}
+
+#rightSide textarea{
+    height: 4vw;
+    resize: none;
     /*
         to do here:
         * Pretty up text input fields
