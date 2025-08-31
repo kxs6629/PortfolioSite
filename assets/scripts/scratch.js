@@ -14,7 +14,6 @@ for (let i = 0; i < cardDeck.length; i++) {
 function flipCard(e){
     let daycare = e.children;
     for(let i = 0;  i < daycare.length; i++){
-        console.log(daycare[i])
         daycare[i].classList.toggle('hide')
     }
 }

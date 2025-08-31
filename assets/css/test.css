@@ -54,7 +54,7 @@ section{
 .navMenu{
     background-color:#1D2021;
     position: fixed;
-    width:95%;
+    width:100%;
     padding: 1em;
     display: flex;
     flex-direction: row;
@@ -68,6 +68,7 @@ section{
     gap: 1em;
     font-size: 2rem;
     list-style-type: none;
+    padding-right: 2em;
 }
 
 a:link, a:visited {
@@ -85,8 +86,17 @@ a:active, a:hover{
     text-align: center;
 }
 
+#home h1{
+    font-size:5rem;
+}
+#home p{
+    opacity: 25%;
+    padding-left:2em;
+}
+
 #bottomText{
     position: absolute;
+    font-size: 1rem;
     bottom:10%;
 }
 
@@ -186,6 +196,7 @@ button{
     */
     flex-direction: column;
     align-items: center;
+    background-color: rgba(179, 186, 188, 0.25);
 }
 
 .projectSlide img{
