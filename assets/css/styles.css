@@ -1,6 +1,16 @@
+@keyframes easeIn {
+    from{opacity: 0%;}
+    to{opacity: 100%;}
+}
+
+@keyframes easeOut{
+    from{opacity: 100%;}
+    to{opacity: 0%;}
+}
+
 *{
-    padding: 0;
-    margin: 0;
+    margin:0;
+    padding:0;
 }
 
 html{
@@ -9,13 +19,56 @@ html{
     font-family: 'Inter', sans-serif;
 }
 
+/* Font Size + Styling */
 h1{
+    font-size:4rem;
     font-weight: normal;
-    font-size: 96px;
+}
+
+h2{
+    font-size:3rem;
+    font-weight: normal;
+}
+
+h3{
+    font-weight: normal;
+    font-size: 2rem;
 }
 
 p{
-    font-size: 48px;
+    font-size:2rem;
+}
+
+
+section{
+    height:100vh;    
+    display:flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding:0em 3em;
+}
+
+.navMenu{
+    background-color:#1D2021;
+    position: fixed;
+    width:100%;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+#navLinks{
+    display: flex;
+    gap: 1em;
+    font-size: 2rem;
+    list-style-type: none;
+    padding-right: 2em;
 }
 
 a:link, a:visited {
@@ -27,174 +80,43 @@ a:active, a:hover{
     text-decoration: underline;
 }
 
-.card{
-    background-color: transparent;
-    width:500px;
-    height:300px;
-    perspective: 1000px;
-}
 
-.cardInterior{
-    position: relative;
-    width: 100%;
-    height: 100%;
+#nameTile p{
+    font-size: 3rem;
     text-align: center;
-    transition:  transform 0.8s;
-    transform-style: preserve-3d;
 }
 
-.card:hover .cardInterior{
-    transform: rotateY(180deg);
-}
-
-.cardFront, .cardBack{
-    position: absolute;
-    width: 100%;
-    height: 80%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    border-radius: 10px;
-
-}
-
-.cardFront{
-    background-color: rgba(179, 186, 188, 0.25) ;
-    color:#fff;
-    display: flex;
-    flex-flow: row wrap;
+#home{
     justify-content: center;
-    align-items: center;
 }
 
-.cardFront p, .cardFront span{
-    flex-basis: 100%;
+#home h1{
+    font-size:5rem;
 }
 
-.cardBack{
-    background-color: rgba(179, 186, 188, 0.25);
-    color: #fff;
-    transform: rotateY(180deg);
-    text-align: left;
-}
-
-.cardBack h2{
-    text-decoration: underline;
-    font-weight: normal;
-    text-align: center;
-    font-size: 48px;
-}
-
-.cardBack p{
-    font-size: 24px;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-.cardBack ul{
-    padding-left: 10%;
-    font-size: 24px;
-    list-style-type: disc;
-}
-
-.navMenu{
-    position: fixed;
-    width:95%;
-    padding: 1em;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    z-index: 1;
-}
-
-.contentPage{
-    height: max-content;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.sectionHeader{
-    font-size: 64px;
-    margin-bottom:5%;
-}
-
-.slide{
-    background-color: rgba(179, 186, 188, 0.25);
-    padding:25px;
-    /* border-radius: 10px; */
-}
-
-/* Attempting to center nav dots since the arrows are touching the vertical nav dots
-#fp-nav ul li a span, 
-.fp-slidesNav ul li a span{
-    display: flex;
-    justify-content: center;
-    background: white;
-   
-} */
-
-#WIP{
-    position: absolute;
-    right: 50px;
-    bottom: 100px;
-    background-color: #ffcc00;
-    color: #000;
-    rotate: 15deg;
-    max-width: 250px;
-    padding: 10px;
-    z-index: 1;
-
-}
-
-#navLinks{
-    display: flex;
-    gap: 30px;
-    font-size: 24px;
-    list-style-type: none;
-}
-
-#nameTile{
-    font-size: 48px;
-    text-align: center;
-}
-
-#subHeader{
-    font-size: 24px;
-}
-
-#introText{
-    margin-right: 20%;
-}
-
-#subText{
-    font-size: 64px;
-    margin-right: 15%;
+#home p{
     opacity: 25%;
 }
 
-#bottomText{
-    font-size: 24px;
-    opacity: 35%;
-    margin-top: 20%;
+#flavorText{
+    padding-left:2em;
 }
 
-#aboutMe{
-   text-align: left;
-   padding:25px;
+#bottomText{
+    position: absolute;
+    font-size: 1rem;
+    bottom:10%;
+}
+
+#about{
+    text-align: center;
 }
 
 #resumeButton{
+    font-size:1.5rem;
+    padding: 10px;
+    border-radius: 5px;
     background-color: #FE5F55;
-    border: none;
-    border-radius: 10px;
-
-    align-content: center;
-    text-align: center;
-    text-decoration: none;
-
-    width: 200px;
-    height: 50px;
-
     align-self: center;
 }
 
@@ -202,63 +124,248 @@ a:active, a:hover{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 30%;
+    gap: 21%;
+    height: 25%;
+    width: 100%;
+    align-content: center;
     justify-content: center;
 }
 
-/* #projectScreen p{
-    margin-bottom: 10%;
-} */
-
-
-
-#projectSlides{
-   
+.skillCard{
+    cursor: pointer;
+  flex-basis: 25%;
+  padding: 5px;
+  background-color: rgba(179, 186, 188, 0.25);
+  border-radius: 5px;
+  box-shadow: 3px 5px rgba(0, 0, 0, 0.75);
+  height: 100%;
+  align-content: center;
+  overflow: scroll;
 }
 
-#projectSlides h2{
+.cardFront,.cardBack{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    transition: visibility 10ms;
+    transition-timing-function: ease;
+    animation-name: easeIn;
+    animation-duration: 100ms;
+}
+
+.cardFront{
+    text-align: center;
+}
+
+.cardBack{
+    flex-direction: column;
+}
+
+.cardBack h3{
     text-decoration: underline;
-    font-size: 48px;
 }
 
-#projectSlides p{
-    font-size: 36px;
+.cardBack p{
+    font-size: 1rem;
 }
 
-#projectSlides img{
-    max-width: 40%;
-    max-height: 20%;
+.cardBack ul{
+    list-style-type: disc;
 }
 
-#projectSlides a{
-    color: #A9CEF4;
-    font-size: 24px;
+.cardBack li{
+    list-style-position: inside;
 }
 
-#projectSlides a:visited{
-    color: #FE5F55;
+.hide{
+    display: none;
 }
 
-#contactScreen{
-    gap: 2em;
+button{
+    width: 50px;
+    height: 50px;
 }
 
-#contactChild{
+#slideController{
     display: flex;
     width: 100%;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    height: 75%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:2em;
 }
 
-#socialBox{
+#slideController button{
+    background-color: #FE5F55;
+    border-radius: 25%;
+    border:none;
+    cursor:pointer;
+}
+
+.projectSlide{
+    flex-grow: 2;
+    display: none;
+    /*
+        These value are used after inheriting the display when showSlide() is called
+        (also pretty up the slides
+    */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 75%;
+    width: 50%;
+    gap:1em;
+    padding:1rem 1em;
+    background-color: rgba(179, 186, 188, 0.25);
+}
+
+.projectSlide p{
+    font-size: 2rem;  
+}
+
+.projectSlide img{
+    max-width: 20vw;
+    max-height: 20vh;
+}
+
+.projectSlide h2{
+    text-decoration: underline;
+}
+
+.projectSlide a{
+    font-size: 2rem;
+    color:#FE5F55
+}
+
+#splitSection{
+    display: flex;
+    width: 50vw;
+    flex-direction: row;
+    gap:2em;
+}
+#leftSide,#rightSide{
+    padding:1em;
+    flex-basis: 50%;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 3px 5px rgba(0, 0, 0, 0.75);
+}
+
+#leftSide{
     background-color: rgba(169, 206, 244,.5);
-    width: 25%;
+    font-size: 2rem;
 }
 
-#socialBox ul{
-    list-style: none;
+#leftSide ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 75%;
+    align-items:start;
 }
 
-#formBox{
-    width: 25%;
+#rightSide{
+    background-color: rgba(119, 152, 185, 0.5);
+}
+
+#rightSide form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding:1em;
+}
+
+#rightSide label{
+    align-self: start;
+}
+
+#rightSide input[type=text]{
+    width:20em;
+    height: 25px;
+}
+
+#rightSide input[type=submit]{
+    width: 100px;
+    height:25px
+}
+
+#rightSide #subText{
+    font-size:1rem;
+}
+
+#rightSide textarea{
+    height: 4vw;
+    resize: none;
+}
+
+/* Mobile Design */
+@media only screen and (max-width: 600px){
+    h1{
+        font-size:2rem;
+        font-weight: normal;
+        text-align: center;
+    }
+
+    h2, h3{
+        font-size:1rem;
+        font-weight: normal;
+    }
+
+    p, #resumeButton, .projectSlide p, .projectSlide a, #leftSide{
+        font-size:1rem;
+    }
+    #navLinks{
+        display: none   ;
+        font-size: 1rem;
+        list-style-type: none;
+    }
+    #nameTile p{
+        font-size: 1rem;
+        text-align: center;
+    }
+    #home h1{
+        font-size:2rem;
+    }
+
+    .projectSlide{
+        overflow: scroll;
+    }
+
+    #slideController{
+        flex-wrap: wrap;
+    }
+
+    #slideController button{
+        flex-basis: 50%;
+        border-radius: 5%;
+    }
+
+    .projectSlide img{
+        max-width: 75%;
+    }
+
+    #cardDeck{
+        height:10%;
+    }
+
+    .skillCard{
+        flex-basis: 50%;
+    }
+
+    #splitSection{
+        justify-content: center;
+        flex-wrap: wrap ;
+        width:inherit;
+    }
+
+    #rightSide form{
+        padding:0;
+    }
+
+    #rightSide textarea{
+        height: inherit;
+    }
+
 }
