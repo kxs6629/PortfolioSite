@@ -101,6 +101,7 @@ a:active, a:hover{
 #bottomText{
     position: absolute;
     font-size: 1rem;
+    padding-left: 0;
     bottom:10%;
 }
 
@@ -112,7 +113,6 @@ a:active, a:hover{
     font-size:1.5rem;
     padding: 10px;
     border-radius: 5px;
-    height:2vw;
     background-color: #FE5F55;
     align-self: center;
 }
@@ -121,24 +121,23 @@ a:active, a:hover{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 10vw;
-    height: 75vh;
-    width: 50vw;
+    gap: 21%;
+    height: 25%;
+    width: 100%;
     align-content: center;
     justify-content: center;
 }
 
 .skillCard{
-    cursor:pointer;
-    flex-basis:25%;
-    padding:5px;
-    background-color: rgba(179, 186, 188, 0.25) ;
-    border-radius: 5px;
-    box-shadow: 3px 5px rgba(0, 0, 0, 0.75);
-    height: 8vw;
-    align-content: center;
-    overflow:scroll
-      /*pretty up the cards  */
+    cursor: pointer;
+  flex-basis: 25%;
+  padding: 5px;
+  background-color: rgba(179, 186, 188, 0.25);
+  border-radius: 5px;
+  box-shadow: 3px 5px rgba(0, 0, 0, 0.75);
+  height: 100%;
+  align-content: center;
+  overflow: scroll;
 }
 
 .cardFront,.cardBack{
@@ -300,11 +299,73 @@ button{
 #rightSide textarea{
     height: 4vw;
     resize: none;
-    /*
-        to do here:
-        * Pretty up text input fields
-        * fix submit button 
-    */
-
 }
 
+/* Mobile Design */
+@media only screen and (max-width: 600px){
+    h1{
+        font-size:2rem;
+        font-weight: normal;
+    }
+
+    h2, h3{
+        font-size:1rem;
+        font-weight: normal;
+    }
+
+    p, #resumeButton, .projectSlide p, .projectSlide a, #leftSide{
+        font-size:1rem;
+    }
+    #navLinks{
+        display: none   ;
+        font-size: 1rem;
+        list-style-type: none;
+    }
+    #nameTile p{
+        font-size: 1rem;
+        text-align: center;
+    }
+    #home h1{
+        font-size:2rem;
+    }
+
+    .projectSlide{
+        overflow: scroll;
+    }
+
+    #slideController{
+        flex-wrap: wrap;
+    }
+
+    #slideController button{
+        flex-basis: 50%;
+        border-radius: 5%;
+    }
+
+    .projectSlide img{
+        max-width: 75%;
+    }
+
+    #cardDeck{
+        height:10%;
+    }
+
+    .skillCard{
+        flex-basis: 50%;
+    }
+
+    #splitSection{
+        justify-content: center;
+        flex-wrap: wrap ;
+        width:inherit;
+    }
+
+    #rightSide form{
+        padding:0;
+    }
+
+    #rightSide textarea{
+        height: inherit;
+    }
+
+}
