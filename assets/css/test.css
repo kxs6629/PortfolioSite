@@ -93,15 +93,18 @@ a:active, a:hover{
 #home h1{
     font-size:5rem;
 }
+
 #home p{
     opacity: 25%;
+}
+
+#flavorText{
     padding-left:2em;
 }
 
 #bottomText{
     position: absolute;
     font-size: 1rem;
-    padding-left: 0;
     bottom:10%;
 }
 
@@ -235,10 +238,6 @@ button{
     color:#FE5F55
 }
 
-#contactSection{
-    gap:1em;
-}
-
 #splitSection{
     display: flex;
     width: 50vw;
@@ -306,6 +305,7 @@ button{
     h1{
         font-size:2rem;
         font-weight: normal;
+        text-align: center;
     }
 
     h2, h3{
