@@ -46,7 +46,7 @@ section{
     flex-grow: 1;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     padding:0em 3em;
 }
@@ -86,6 +86,10 @@ a:active, a:hover{
     text-align: center;
 }
 
+#home{
+    justify-content: center;
+}
+
 #home h1{
     font-size:5rem;
 }
@@ -100,13 +104,17 @@ a:active, a:hover{
     bottom:10%;
 }
 
+#about{
+    text-align: center;
+}
+
 #resumeButton{
     font-size:1.5rem;
     padding: 10px;
     border-radius: 5px;
     height:2vw;
-    background-color: red;
-    align-self: end;
+    background-color: #FE5F55;
+    align-self: center;
 }
 
 #cardDeck{
@@ -118,7 +126,6 @@ a:active, a:hover{
     width: 50vw;
     align-content: center;
     justify-content: center;
-    cursor:pointer;
 }
 
 .skillCard{
@@ -180,11 +187,18 @@ button{
 #slideController{
     display: flex;
     width: 100%;
-    height: 50%;
+    height: 75%;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap:2em;
+}
+
+#slideController button{
+    background-color: #FE5F55;
+    border-radius: 25%;
+    border:none;
+    cursor:pointer;
 }
 
 .projectSlide{
@@ -196,12 +210,30 @@ button{
     */
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    height: 75%;
+    width: 50%;
+    gap:1em;
+    padding:1rem 1em;
     background-color: rgba(179, 186, 188, 0.25);
 }
 
+.projectSlide p{
+    font-size: 2rem;  
+}
+
 .projectSlide img{
-    max-width: 10vw;
-    max-height: 10vh;
+    max-width: 20vw;
+    max-height: 20vh;
+}
+
+.projectSlide h2{
+    text-decoration: underline;
+}
+
+.projectSlide a{
+    font-size: 2rem;
+    color:#FE5F55
 }
 
 #contactSection{
