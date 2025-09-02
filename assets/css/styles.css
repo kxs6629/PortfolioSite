@@ -170,6 +170,7 @@ a:active, a:hover{
 
 .cardBack h3{
     text-decoration: underline;
+    align-self: center;
 }
 
 .cardBack p{
@@ -291,6 +292,7 @@ button{
 #rightSide input[type=text]{
     width:20em;
     height: 25px;
+    margin-bottom: .5em;
 }
 
 #rightSide input[type=submit]{
@@ -305,6 +307,7 @@ button{
 #rightSide textarea{
     height: 4vw;
     resize: none;
+    margin-bottom: .5em;
 }
 
 /* Mobile Design */
