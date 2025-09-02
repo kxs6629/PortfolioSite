@@ -17,6 +17,13 @@ html{
     background-color: #1D2021;
     color:  #fff;
     font-family: 'Inter', sans-serif;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0;  
+    background: transparent;
 }
 
 /* Font Size + Styling */
