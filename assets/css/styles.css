@@ -183,6 +183,8 @@ a:active, a:hover{
 
 .cardBack li{
     list-style-position: inside;
+    font-size: 1.5em;
+    padding:0 1em;
 }
 
 .hide{
@@ -378,4 +380,42 @@ button{
         height: inherit;
     }
 
+}
+
+/* this should handle ALL landscape orientations */
+@media only screen and (max-width: 900px){
+  h1{
+        font-size:1.5rem;
+        font-weight: normal;
+        text-align: center;
+    }
+
+    h2, h3{
+        font-size:1rem;
+        font-weight: normal;
+    }
+
+    p, #resumeButton, .projectSlide p, .projectSlide a, #leftSide{
+        font-size:1rem;
+    }
+    #navLinks{
+        font-size: 1.25rem;
+        list-style-type: none;
+    }
+    #nameTile p{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    #home h1{
+        font-size:2rem;
+    }
+   
+    .cardBack li{
+        font-size:1em;
+    }
+
+    .projectSlide p{
+        font-size: .75em;
+    }
+    
 }
