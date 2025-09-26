@@ -213,6 +213,14 @@ button{
     cursor:pointer;
 }
 
+.desktopButton{
+    display: inherit;
+}
+
+.mobileButton{
+    display: none;
+}
+
 .projectSlide{
     flex-grow: 2;
     display: none;
@@ -354,6 +362,15 @@ button{
         border-radius: 5%;
     }
 
+
+    .desktopButton{
+        display: none;
+    }
+
+    .mobileButton{
+        display: inherit;
+    }
+
     .projectSlide img{
         max-width: 75%;
     }
@@ -364,6 +381,10 @@ button{
 
     .skillCard{
         flex-basis: 50%;
+    }
+
+    #contactSection{
+        padding:1em;
     }
 
     #splitSection{
@@ -416,6 +437,11 @@ button{
 
     .projectSlide p{
         font-size: .75em;
+    }
+
+    /* Contact section you pain in the ass */
+    #contactSection{
+        
     }
     
 }
